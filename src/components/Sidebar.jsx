@@ -6,9 +6,9 @@ import { HiOutlineClipboardCheck } from 'react-icons/hi';
 
 const Sidebar = () => {
   const menuItems = [
-    { path: '/home/purchaseRequest', label: 'Purchase Request', icon: <FaFileInvoice /> },
-    { path: '/home/uploadInvoice', label: 'Upload Invoice', icon: <FaFileUpload /> },
-    { path: '/home/approvals', label: 'Approvals', icon: <HiOutlineClipboardCheck /> }
+    { path: '/home/purchaseRequest', label: 'Purchase Request', icon: <FaFileInvoice /> }, 
+    { path: '/home/approvals', label: 'Approvals', icon: <HiOutlineClipboardCheck /> },
+     { path: '/home/uploadInvoice', label: 'Upload Invoice', icon: <FaFileUpload /> },
 
   ];
 
@@ -16,7 +16,7 @@ const Sidebar = () => {
     <aside className="w-64 h-screen bg-gray-800 text-gray-100 flex flex-col justify-between shadow-lg">
       {/* Logo and Header */}
       <div className="p-6">
-        <h2 className="text-2xl font-semibold tracking-tight text-white mb-8">FinFlo</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-white mb-8">ChainDraft</h2>
 
         <ul className="space-y-2">
           {menuItems.map(item => (
@@ -41,7 +41,7 @@ const Sidebar = () => {
 
       {/* Footer */}
       <div className="text-xs text-gray-500 text-center p-4">
-        © {new Date().getFullYear()} FinFlo
+        © {new Date().getFullYear()} ChainDraft
       </div>
     </aside>
   );
